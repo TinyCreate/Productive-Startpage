@@ -1,0 +1,171 @@
+
+body {
+  color: #000000;
+  background: #000000;
+  overflow: hidden;
+
+
+ 
+/*Background Images*/
+
+/*summer*/
+background: url(https://i.ibb.co/VtQcLTX/desert-mountain-web.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+  background-color: black;
+}
+
+.dark-mode {
+  
+/*Background Images*/
+
+/*winter*/   
+background: url(https://i.ibb.co/1dXG7F9/winter-mountain-web.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: black;
+}
+
+
+/*Links */
+body {
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  }
+
+
+#container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  font-family: monospace;
+}
+
+#container #links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align: left;
+}
+
+#container #links .con {
+  margin: 30px;
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#container #links .con .title {
+  color: white;
+  text-align: left;
+  font-size: 22px !important;
+  margin-bottom: 5px;
+  font-style: normal;
+  font-weight: 400;
+  color: #8fd0ff;
+}
+
+#container #links .con .list {
+  color: #dadada;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+#container #links .con .list li {
+  padding-top: 8px;
+}
+
+#container #links .con .list a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.2s;
+}
+
+#container #links .con .list a:hover {
+  color: #bdbdbd;
+  transition: color 0.2s;
+}
+
+#container #links .con .list i {
+  padding-right: 0px;
+}
+
+
+
+
+
+
+/*MINIMAL SEARCH BAR*/
+#container #main .searchbar input {
+  width: 50vw;
+  max-width: 280px;
+  background: transparent;
+  color: white;
+  opacity: 90%;
+}
+
+
+#container #main .searchbar {
+  padding-top: 110px;
+  padding-left: 300px;
+}
+
+#container #main .searchbar input {
+  height: 30px;
+  width: 180px;
+  padding-top: 10px;
+  border-radius: 0px;
+  border: transparent;
+  font-family: "Verdana";
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid var(--color-border);
+  border-top: 0px solid var(--color-border);
+  transition: border-color .4s ease-out;
+}
+
+#container #main .searchbar input::placeholder {
+  color: white;
+  transition: opacity .26s ease-in-out;
+  opacity: 75%;
+}
+
+#container #main .searchbar input:focus::placeholder {
+  opacity: 100;
+}
+
+#container #main .searchbar input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--color-border-hover);
+  border-top: 0px solid var(--color-border-hover);
+}
+
+
+:root {
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: transparent;
+    --color-fg-1: #bababa;
+    --color-fg-2: #a0a0a0;
+    --color-fg-1-hover: #e3e3e3;
+    --color-border: #2f2f2f;
+    --color-border-hover: #5a5a5a;
+    --color-footer: #7e7e7e;
+  }
+}

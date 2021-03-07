@@ -1,0 +1,89 @@
+
+/* (A) TODO GENERAL FORM STYLES */
+#todo-wrap input { box-sizing: border-box; }
+#todo-wrap input { padding: 5px; }
+#todo-wrap input[type=button], #todo-wrap input[type=submit] {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* (B) TODO WHOLE CONTAINER */
+#todo-wrap {
+  max-width: 300px;
+  float: right
+  background-color: transparent;
+  padding: 50px;
+  opacity: 60%;
+}
+
+/* (C) TODO HEADER  */
+#todo-wrap h1 {
+  font-size: 30px;
+  margin: 5;
+  color: #333333;
+}
+
+/* (D) TODO ADD ITEM  */
+#todo-add { display: flex; }
+#todo-item { width: 85%; }
+#todo-save {
+  width: 15%;
+  background: #333;
+  border: 2px solid #333;
+  border-radius: 3px;
+}
+
+/* (E) TODO DELETE ITEMS */
+#todo-del { margin: 10px 0;}
+#todo-del input {
+  background: #5c0300;
+  border: 2px solid #5c0300;
+}
+
+/* (F) TODO LIST ITEMS */
+/* (F1) ITEM ROW */
+.todo-row { 
+  display: flex; 
+  margin-top: 15px;
+  height: 30px;
+}
+/* (F2) TODO ITEM TEXT */
+.todo-item { 
+  width: 100%;
+  background: lightgrey;
+  border: 1px solid #eee;
+  padding: 10px;
+  opacity: 80%;
+}
+.todo-item.cx {
+  background: #FFE1D7;
+  text-decoration: line-through;
+}
+.todo-item.done {
+  background: #181818;
+  color: lightgrey;
+  text-decoration: line-through;
+}
+/* (F3) TODO CANCEL AND OK BUTTONS */
+.todo-cx, .todo-ok {
+  width: 30px;
+  height: 30px;
+}
+.todo-cx {
+  background: #CF585C;
+  border: 1px solid #354A36;
+}
+.todo-ok {
+  background: #354A36;
+  border: 1px solid #005c13;
+  border-radius: 3px;
+}
+
+/* (G) TODO DOES NOT MATTER */
+html, body, input {
+  font-family: sans-serif, arial;
+}
+html, body {
+  padding: 0;
+  margin: 0;
+}
